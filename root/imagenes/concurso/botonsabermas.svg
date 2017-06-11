@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 160 70" style="enable-background:new 0 0 160 70;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'AlternateGothicNo2BT-Regular';}
+	.st3{font-size:30px;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="79.9986" y1="-1.5035" x2="79.9986" y2="74.1845">
+	<stop  offset="0" style="stop-color:#1000A5"/>
+	<stop  offset="0.2578" style="stop-color:#22069E"/>
+	<stop  offset="0.728" style="stop-color:#3E1092"/>
+	<stop  offset="1" style="stop-color:#49148E"/>
+</linearGradient>
+<path class="st0" d="M149.1,70H10.9c-5.5,0-9.9-4.5-9.9-9.9V10.9C0.9,5.5,5.4,1,10.9,1h138.3c5.5,0,9.9,4.5,9.9,9.9v49.2
+	C159.1,65.5,154.6,70,149.1,70z"/>
+<text transform="matrix(1.0179 0 0 1 32.2535 45.0068)" class="st1 st2 st3">Saber más</text>
+</svg>
