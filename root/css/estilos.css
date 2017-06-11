@@ -12,6 +12,13 @@ body {
     margin: 0;
 }
 
+body main {
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    font-size: 14px;
+    margin: 0;
+}
+
 /*=============================== Header ===============================*/
 header {
     position: fixed;
@@ -137,7 +144,7 @@ header nav a:hover {
     border-style: solid;
     border-color: #fff;
     border-width: 30px;
-	background-image: url(../imagenes/pantallainicio/poster.jpg);
+	background-image: url(../imagenes/pantallainicio/poster.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -217,5 +224,71 @@ header nav a:hover {
     z-index: 2;
 }
 
+#seccion-exponentes {
+    background-image: url(../imagenes/pantallainicio/conciertos1.jpg);
+    background-color: #000;
+    z-index: 2;
+}
+
+#seccion-conferencias {
+    background-image: url(../imagenes/pantallainicio/conferencias1.jpg);
+    background-color: #000;
+    z-index: 2;
+}
+
+#seccion-eventos {
+    background-image: url(../imagenes/pantallainicio/concurso1.jpg);
+    background-color: #000;
+    z-index: 2;
+}
 
 /*=============================== Concursos ===============================*/
+#concursos-portada {
+    height: 50%;
+    background-image: url(../imagenes/concurso/portada.png);
+    background-size: auto 518px; /*No hay forma de que llene todo el espacio en lg sin distorsionarse o que solo se vea el cielo*/
+    background-position: top;
+	background-color: #000;
+	z-index: 1;
+}
+
+#concurso-icono {
+    position: relative;
+    display: block;
+    margin: -68px auto 0;
+    width: 137px;
+    height: 137px;
+    background-image: url(../imagenes/concurso/iconoconcurso.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    z-index: 2;
+}
+
+#concurso-titulo {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+#concurso-titulo h1 {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    font-size: 48;
+    font-weight: bold;
+}
+
+#concurso-titulo h2 {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+#concurso-titulo p {
+    position: relative;
+    display: block;
+    margin-top: 24px;
+}
