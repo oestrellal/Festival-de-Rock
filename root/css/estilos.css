@@ -275,10 +275,6 @@ footer #footer-terminos {
     width: 425px;
     height: 505px;
     margin: 0 auto;
-	background-image: url(../imagenes/pantallainicio/letrasportada.png);
-	background-size: 425px 505px;
-	background-repeat: no-repeat;
-	background-position: center;
 	text-indent: -9999px;
 }
 
@@ -292,10 +288,6 @@ footer #footer-terminos {
     border-style: solid;
     border-color: #fff;
     border-width: 30px;
-	background-image: url(../imagenes/pantallainicio/poster.png);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
 	text-indent: -9999px;
     z-index: 2;
 }
@@ -329,7 +321,7 @@ footer #footer-terminos {
     width: 446px;
     height: auto;
     padding: 40px;
-    margin: 40% auto;
+    margin: 50% auto;
     border-style: solid;
     border-width: 3px;
     border-color: #fff;
@@ -684,13 +676,68 @@ footer #footer-terminos {
     z-index: 1;
 }
 
+.eventos-mapa {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+}
+
 /*=============================== Medias ===============================*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
     /* XS */
+    /* Menú del header */
+    header nav a {
+		display: block;
+		clear: both;
+		width: 100%;
+		padding: 12px 20px;
+		text-align: center;
+	}
+
+	header nav {
+		display: none;
+	}
+
+    /* Columnas en las páginas de información */
+    .pagina-izq,
+    .pagina-der {
+        float: none;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0;
+    }
+
+    /* Ajustes de la página principal */
+    #pagina-principal-titulo {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;   
+    }
+
+    #pagina-principal-poster {
+        height: auto;
+        border-width: 15px;
+    }
+
+    .pagina-principal-cuadro {
+        width: 95%;
+        margin: 20% auto;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .pagina-principal-parrafo {
+        width: 95%;
+        margin: 20% auto;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	/* SM */
+    /* Menú del header */
 	header nav a {
 		display: block;
 		clear: both;
@@ -702,10 +749,44 @@ footer #footer-terminos {
 	header nav {
 		display: none;
 	}
+
+    /* Columnas en las páginas de información */
+    .pagina-izq,
+    .pagina-der {
+        float: none;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    /* Ajustes de la página principal */
+    #pagina-principal-titulo {
+        width: 425px;
+        height: 505px;
+        margin: 0 auto;   
+    }
+
+    #pagina-principal-poster {
+        height: auto;
+        border-width: 30px;
+    }
+
+    .pagina-principal-cuadro {
+        width: 446px;
+        margin: 20% auto;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .pagina-principal-parrafo {
+        width: 400px;
+        margin: 20% auto;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 	/* MD */
+    /* Menú del header */
 	header nav a {
 		display: inline-block;
 		width: auto;
@@ -716,8 +797,95 @@ footer #footer-terminos {
 	header nav {
 		display: block;
 	}
+
+    /* Columnas en las páginas de información */
+    .pagina-izq {
+        float: right;
+        margin: 35px 10% 0 0;
+        text-align: left;
+    }
+
+    .pagina-der {
+        float: left;
+        margin: 35px 0 0 10%;
+        text-align: left;
+    }
+
+    /* Ajustes de la página principal */
+    #pagina-principal-titulo {
+        width: 425px;
+        height: 505px;
+        margin: 0 auto;   
+    }
+
+    #pagina-principal-poster {
+        height: auto;
+        border-width: 30px;
+    }
+
+    .pagina-principal-cuadro {
+        width: 446px;
+        margin: 50% auto;
+        padding: 40px;
+        font-size: 36px;
+    }
+
+    .pagina-principal-parrafo {
+        width: 400px;
+        margin: 50% auto;
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1200px)  {
 	/* LG */
+    /* Menú del header */
+	header nav a {
+		display: inline-block;
+		width: auto;
+		padding: 3px 20px;
+		text-align: center;
+	}
+
+	header nav {
+		display: block;
+	}
+
+    /* Columnas en las páginas de información */
+    .pagina-izq {
+        float: right;
+        margin: 35px 10% 0 0;
+        text-align: left;
+    }
+
+    .pagina-der {
+        float: left;
+        margin: 35px 0 0 10%;
+        text-align: left;
+    }
+
+    /* Ajustes de la página principal */
+    #pagina-principal-titulo {
+        width: 425px;
+        height: 505px;
+        margin: 0 auto;   
+    }
+
+    #pagina-principal-poster {
+        height: auto;
+        border-width: 30px;
+    }
+
+    .pagina-principal-cuadro {
+        width: 446px;
+        margin: 50% auto;
+        padding: 40px;
+        font-size: 36px;
+    }
+
+    .pagina-principal-parrafo {
+        width: 400px;
+        margin: 50% auto;
+        text-align: left;
+    }
 }
