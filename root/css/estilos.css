@@ -360,8 +360,88 @@ footer #footer-terminos {
     z-index: 2;
 }
 
-/*=============================== Concursos ===============================*/
-#concursos-portada {
+/*============================ Páginas de información ============================*/
+#pagina-titulo {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+#pagina-titulo h1 {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    font-size: 48;
+    font-weight: bold;
+}
+
+#pagina-titulo h3 {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+#pagina-titulo p {
+    position: relative;
+    display: block;
+    margin-top: 24px;
+}
+
+.pagina-contenido {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+}
+
+.pagina-izq {
+    float: right;
+    margin: 35px 10% 0 0;
+    text-align: left;
+}
+
+.pagina-der {
+    float: left;
+    margin: 35px 0 0 10%;
+    text-align: left;
+}
+
+.pagina-contenido h2 {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 36;
+}
+
+.pagina-contenido ul {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.pagina-foto {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 530px;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 25px;
+    text-indent: -9999px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/*=============================== Concurso ===============================*/
+#concurso-portada {
     height: 50%;
     background-image: url(../imagenes/concurso/portada.png);
     background-size: auto 518px; /*No hay forma de que llene todo el espacio en lg sin distorsionarse o que solo se vea el cielo*/
@@ -382,85 +462,6 @@ footer #footer-terminos {
     background-repeat: no-repeat;
     text-indent: -9999px;
     z-index: 2;
-}
-
-#concurso-titulo {
-    position: relative;
-    display: block;
-    text-align: center;
-}
-
-#concurso-titulo h1 {
-    position: relative;
-    display: block;
-    margin: 10px auto;
-    font-size: 48;
-    font-weight: bold;
-}
-
-#concurso-titulo h3 {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    font-size: 18px;
-}
-
-#concurso-titulo p {
-    position: relative;
-    display: block;
-    margin-top: 24px;
-}
-
-.concurso-contenido {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 400px;
-    padding: 10px;
-    text-align: center;
-}
-
-.concurso-izq {
-    float: right;
-    margin: 35px 10% 0 0;
-    text-align: left;
-}
-
-.concurso-der {
-    float: left;
-    margin: 35px 0 0 10%;
-    text-align: left;
-}
-
-.concurso-contenido h2 {
-    position: relative;
-    display: block;
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 36;
-}
-
-.concurso-contenido ul {
-    position: relative;
-    display: block;
-    margin-top: 5px;
-    font-size: 18px;
-}
-
-.concurso-foto {
-    position: relative;
-    display: block;
-    width: 400px;
-    height: 530px;
-    padding: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-style: solid;
-    border-color: #fff;
-    border-width: 25px;
-    text-indent: -9999px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 #concurso-bases {
@@ -498,6 +499,9 @@ footer #footer-terminos {
     background-color: #000;
     z-index: 1;
 }
+
+/*=============================== Conferencias ===============================*/
+
 
 /*=============================== Medias ===============================*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
