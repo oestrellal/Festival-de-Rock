@@ -3,21 +3,24 @@
 
 html, body {
     height: 100%;
+    min-height: 100%;
 }
 
 body {
     font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 14px;
+    padding-bottom: 70px;
     margin: 0;
 }
 
 body main {
     font-family: 'Oswald', sans-serif;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
 }
+
 
 /*=============================== Header ===============================*/
 header {
@@ -70,6 +73,121 @@ header nav a {
 header nav a:hover {
     color: #606060;
     text-decoration: none;
+}
+
+/*=============================== Footer ===============================*/
+footer {
+    position: relative;
+	display: block;
+	left: 0;
+	right: 0;
+    bottom: 0;
+    margin-top: 70px;
+	background-color: #000;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    z-index: 3px;
+}
+
+footer span {
+    position: relative;
+    display: inline-block;
+    margin: 25px;
+}
+
+footer #footer-facebook {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 30px;
+    margin: 20px;
+    background-image: url(../imagenes/logos/logofacebook.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer #footer-instagram {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    background-image: url(../imagenes/logos/logoinsta.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#footer-facebook:focus,
+#footer-instagram:focus {
+    text-decoration: none;
+}
+
+footer #footer-terminos {
+    cursor: pointer;
+}
+
+/*=============================== Modal de Términos ===============================*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-header {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    border: 1px solid #606060;
+    width: 75%; 
+}
+
+.modal-texto {
+    position: relative;
+    display: block;
+    padding: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+    color: #606060;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*=============================== Parallax ===============================*/
@@ -280,15 +398,122 @@ header nav a:hover {
     font-weight: bold;
 }
 
-#concurso-titulo h2 {
+#concurso-titulo h3 {
     position: relative;
     display: block;
     margin: 0 auto;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 #concurso-titulo p {
     position: relative;
     display: block;
     margin-top: 24px;
+}
+
+.concurso-contenido {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+}
+
+.concurso-izq {
+    float: right;
+    margin: 35px 10% 0 0;
+    text-align: left;
+}
+
+.concurso-der {
+    float: left;
+    margin: 35px 0 0 10%;
+    text-align: left;
+}
+
+.concurso-contenido h2 {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 36;
+}
+
+.concurso-contenido ul {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.concurso-foto {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 530px;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 25px;
+    text-indent: -9999px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#concurso-bases {
+    background-image: url(../imagenes/concurso/concurso1.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+#concurso-premios {
+    background-image: url(../imagenes/concurso/concurso2.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+#concurso-inscripcion {
+    background-image: url(../imagenes/concurso/concurso3.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+#concurso-pete {
+    background-image: url(../imagenes/concurso/juez1.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+#concurso-roger {
+    background-image: url(../imagenes/concurso/juez2.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+#concurso-jack {
+    background-image: url(../imagenes/concurso/juez3.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+/*=============================== Medias ===============================*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    /* XS */
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	/* SM */
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	/* MD */
+	
+}
+
+@media screen and (min-width: 1200px)  {
+	/* LG */
 }
