@@ -45,12 +45,37 @@ header #logotipo {
 	background-repeat: no-repeat;
 	background-position: center;
 	text-indent: -9999px;
+    text-decoration: none;
+}
+
+#logotipo:focus {
+    text-decoration: none;
 }
 
 header #contenedor-menu {
     position: relative;
     display: block;
     text-align: center;
+}
+
+header #menu-movil {
+	position: fixed;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	top: 12px;
+	right: 15px;
+	text-indent: -9999px;
+	background-image: url(../imagenes/logos/menu.svg);
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	z-index: 16;
+}
+
+header #menu-movil:hover{
+	background-color: #606060;
 }
 
 header nav {
@@ -72,6 +97,11 @@ header nav a {
 
 header nav a:hover {
     color: #606060;
+    text-decoration: none;
+}
+
+/* No funciona. Ocupamos algo para esconder si un link fue visitado cuando regresen a la página. */
+header nav a:visited {
     text-decoration: none;
 }
 
@@ -424,11 +454,23 @@ footer #footer-terminos {
     font-size: 18px;
 }
 
+.pagina-info {
+    position: relative;
+    display: block;
+}
+
+.pagina-info p {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+}
+
 .pagina-foto {
     position: relative;
     display: block;
-    width: 400px;
-    height: 530px;
+    width: 400px; /* Hay que cambiarlo según la imagen. */
+    height: 530px; /* Hay que cambiarlo según la imagen. */
     padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -462,6 +504,13 @@ footer #footer-terminos {
     background-repeat: no-repeat;
     text-indent: -9999px;
     z-index: 2;
+}
+
+.concurso-boton {
+    margin: 25px auto;
+    color: #fff;
+    padding: 35px 25px;
+    /*Inicio 1000A5 Final 49148E*/
 }
 
 #concurso-bases {
@@ -501,7 +550,139 @@ footer #footer-terminos {
 }
 
 /*=============================== Conferencias ===============================*/
+#conferencias-portada {
+    height: 50%;
+    background-image: url(../imagenes/conferencias/portada.jpg);
+    background-size: auto 518px; /*No hay forma de que llene todo el espacio en lg sin distorsionarse o que solo se vea el cielo*/
+    background-position: top;
+	background-color: #000;
+	z-index: 1;
+}
 
+#conferencias-icono {
+    position: relative;
+    display: block;
+    margin: -68px auto 0;
+    width: 137px;
+    height: 137px;
+    background-image: url(../imagenes/conferencias/iconoconferencia.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    z-index: 2;
+}
+
+.conferencias-reloj {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    margin: 5px;
+    background-image: url(../imagenes/conferencias/reloj.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+.conferencias-punto {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 36px;
+    margin: 5px;
+    background-image: url(../imagenes/conferencias/ubicacion.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+#conferencias-foto1 {
+    height: 314px; 
+    background-image: url(../imagenes/conferencias/confe1.jpg);
+    background-size: cover;
+    background-color: #000;
+    z-index: 1;
+}
+
+#conferencias-foto2 {
+    height: 400px; 
+    background-image: url(../imagenes/conferencias/confe2.jpg);
+    background-size: cover;
+    background-color: #000;
+    z-index: 1;
+}
+
+#conferencias-foto3 {
+    height: 250px; 
+    background-image: url(../imagenes/conferencias/confe3.jpg);
+    background-size: cover;
+    background-color: #000;
+    z-index: 1;
+}
+
+/*=============================== Eventos ===============================*/
+/*                     Reutiliza cosas de Conferencias                  */
+#eventos-portada {
+    height: 50%;
+    background-image: url(../imagenes/eventos/portada.jpg);
+    background-size: auto 518px; /*No hay forma de que llene todo el espacio en lg sin distorsionarse o que solo se vea el cielo*/
+    background-position: top;
+	background-color: #000;
+	z-index: 1;
+}
+
+#eventos-icono {
+    position: relative;
+    display: block;
+    margin: -68px auto 0;
+    width: 137px;
+    height: 137px;
+    background-image: url(../imagenes/eventos/iconoeventos.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    z-index: 2;
+}
+
+.eventos-transporte {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 31px;
+    height: 25px;
+    margin: 5px;
+    background-image: url(../imagenes/eventos/transporte.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+#eventos-foto1 {
+    width: 654px;
+    height: 363px; 
+    margin-left: -15%;
+    background-image: url(../imagenes/eventos/patrick.jpg);
+    background-size: cover;
+    background-color: #000;
+    z-index: 1;
+}
+
+#eventos-foto2 {
+    width: 492px;
+    height: 370px; 
+    margin-right: -10%;
+    background-image: url(../imagenes/eventos/bulldog.jpg);
+    background-size: cover;
+    background-color: #000;
+    z-index: 1;
+}
 
 /*=============================== Medias ===============================*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -510,12 +691,31 @@ footer #footer-terminos {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	/* SM */
+	header nav a {
+		display: block;
+		clear: both;
+		width: 100%;
+		padding: 12px 20px;
+		text-align: center;
+	}
 
+	header nav {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 	/* MD */
-	
+	header nav a {
+		display: inline-block;
+		width: auto;
+		padding: 3px 20px;
+		text-align: center;
+	}
+
+	header nav {
+		display: block;
+	}
 }
 
 @media screen and (min-width: 1200px)  {
