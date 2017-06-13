@@ -56,6 +56,7 @@ header #contenedor-menu {
     position: relative;
     display: block;
     text-align: center;
+    background-color: #000;
 }
 
 header #menu-movil {
@@ -82,6 +83,9 @@ header nav {
     position: relative;
     float: right;
     height: 48px;
+    background-color: #000;
+    height: auto;
+    text-align: center;
 }
 
 header nav a {
@@ -764,6 +768,7 @@ footer #footer-terminos {
 
 	header nav {
 		display: none;
+        width: 100%;
 	}
 
     /* Columnas en las páginas de información */
@@ -814,6 +819,7 @@ footer #footer-terminos {
 
 	header nav {
 		display: none;
+        width: 100%;
 	}
 
     /* Columnas en las páginas de información */
