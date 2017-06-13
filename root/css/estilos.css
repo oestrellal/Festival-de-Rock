@@ -688,6 +688,72 @@ footer #footer-terminos {
     margin: 25px 0;
 }
 
+/*=============================== Estadia ===============================*/
+#estadia-portada {
+    height: 50%;
+    background-image: url(../imagenes/estadia/portada2.png);
+    background-size: auto 518px; /*No hay forma de que llene todo el espacio en lg sin distorsionarse o que solo se vea el cielo*/
+    background-position: top;
+    background-color: #000;
+    z-index: 1;
+}
+
+#estadia-icono {
+    position: relative;
+    display: block;
+    margin: -68px auto 0;
+    width: 137px;
+    height: 137px;
+    background-image: url(../imagenes/estadia/iconoviaje.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    z-index: 2;
+}
+
+.estadia-boton {
+    margin: 25px auto;
+    color: #fff;
+    padding: 35px 25px;
+    /*Inicio 1000A5 Final 49148E*/
+}
+
+#estadia-hoteles {
+    background-image: url(../imagenes/estadia/viaje1.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+#estadia-quinta {
+    background-image: url(../imagenes/estadia/viaje2.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+#estadia-casareyna {
+    background-image: url(../imagenes/estadia/viaje3.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+#estadia-balcon {
+    background-image: url(../imagenes/estadia/viaje4.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+/*Agregar Carousel*/
+#estadia-galeria {
+    background-image: url(../imagenes/estadia/viaje4.jpg);
+    background-color: #000;
+    z-index: 1;
+}
+
+.item img{
+    background-size: cover; 
+}
+
 /*=============================== Medias ===============================*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
     /* XS */
