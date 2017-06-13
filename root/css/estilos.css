@@ -691,7 +691,7 @@ footer #footer-terminos {
 /*=============================== Estadia ===============================*/
 #estadia-portada {
     height: 50%;
-    background-image: url(../imagenes/estadia/portada2.png);
+    background-image: url(../imagenes/estadia/portada2.jpg);
     background-size: auto 518px; /*No hay forma de que llene todo el espacio en lg sin distorsionarse o que solo se vea el cielo*/
     background-position: top;
     background-color: #000;
@@ -720,6 +720,9 @@ footer #footer-terminos {
 }
 
 #estadia-hoteles {
+    width: 649px;
+    height: 406px; 
+    margin-left: -15%;
     background-image: url(../imagenes/estadia/viaje1.jpg);
     background-color: #000;
     z-index: 1;
@@ -750,8 +753,118 @@ footer #footer-terminos {
     z-index: 1;
 }
 
-.item img{
-    background-size: cover; 
+.item {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.item img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+#carousel-example-generic {
+    margin-top: 25px;
+    height: 550px;
+}
+
+.boton-izq {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-image: url(../imagenes/estadia/flecha_izquierda_negra.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    z-index: 2;
+}
+
+/*=============================== Invitados ===============================*/
+#invitados-portada {
+    height: 50%;
+    background-image: url("../imagenes/invitados/portada.jpg");
+    background-size: auto 518px; /*No hay forma de que llene todo el espacio en lg sin distorsionarse o que solo se vea el cielo*/
+    background-position: top;
+	background-color: #000;
+	z-index: 1;
+}
+
+#invitados-icono {
+    position: relative;
+    display: block;
+    margin: -68px auto 0;
+    width: 137px;
+    height: 137px;
+    background-image: url(../imagenes/invitados/iconoparti.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    z-index: 2;
+}
+
+#invitados-poster {
+    position: relative;
+	display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+	text-indent: -9999px;
+    z-index: 2;
+}
+
+.invitados-comentarios {
+    position: relative;
+    display: block;
+    width: 85%;
+    height: auto;
+    margin: 15px auto;
+    padding: 10px;
+    border-top-style: solid;
+    border-top-color: #606060;
+    border-top-width: 10px;
+}
+
+.invitados-foto-usuario {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.invitados-nombre-fecha {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    width: 20%;
+    vertical-align: middle;
+}
+
+.invitados-texto-calificacion {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+}
+
+.invitados-estrellas {
+    position: relative;
+    display: block;
+    width: 109px;
+    height: 16px;
+    margin: 5px;
+    background-image: url(../imagenes/invitados/estrellas.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
 }
 
 /*=============================== Medias ===============================*/
@@ -804,6 +917,7 @@ footer #footer-terminos {
         margin: 20% auto;
         text-align: center;
     }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
