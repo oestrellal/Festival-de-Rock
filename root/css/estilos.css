@@ -819,6 +819,33 @@ input::-webkit-input-placeholder {
     font-size: 11px;
     text-align: center;
 }
+/*=============================== Boletos ===============================*/
+#boletos-portada {
+    height: 50%;
+    background-image: url(../imagenes/boletos/portada.jpg);
+    background-size: auto 518px; /*No hay forma de que llene todo el espacio en lg sin distorsionarse o que solo se vea el cielo*/
+    background-position: top;
+    background-color: #000;
+    z-index: 1;
+}
+
+#boletos-icono {
+    position: relative;
+    display: block;
+    margin: -68px auto 0;
+    width: 137px;
+    height: 137px;
+    background-image: url(../imagenes/boletos/iconoboleto.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    z-index: 2;
+}
+
+#boletos-main {
+    margin: 0 auto;
+}
 
 /*=============================== Medias ===============================*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
