@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+        <script src="javascript/bootstrap.min.js"></script>
+        <script src="javascript/funciones.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Registro - Zócalo</title>
+    </head>
+    <body>
+        <!-- El header del sitio. Debe de ser igual para todas las páginas.-->
+        <!-- FALTA centrar los links y diseñar el modo responsivo. Además, los links están centrados con una chicanada.-->
+        <header>
+            <div class="div container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="index.html" id="logotipo">Logotipo</a>
+                    </div>
+                    <div class="col-md-10" id="contenedor-menu">
+                        <span id="menu-movil" class="visible-xs-inline-block visible-sm-inline-block">Menú</span>
+                        <nav>
+                            <a href="concurso.html">Concurso</a>
+                            <a href="conferencias.html">Conferencias</a>
+                            <a href="eventos.html">Eventos</a>
+                            <a href="estadia.html">Estadía</a>
+                            <a href="#">Invitados</a>
+                            <a href="#">Boletos</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+                <!-- La imagen de portada con parallax. -->
+        <div class="parallax" id="registro-portada">
+            <div class="overlay"></div>
+        </div>
+
+        <!-- El contenido principal de la pagina.-->
+        <main>
+            <div class="div container">
+                <!-- Título.-->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <span id="registro-icono">Icono</span>
+                        <div id="pagina-titulo">
+                            <h1>Registro Zocalo</h1>
+                            <h3>XVIII ENCUENTRO INTERNACIONAL DE ROCK</h3>
+                            <p>Una cuenta Zocalo le permite elegir su linea, activar su pulsera y publicar en el tablero de mensajes de Zocalo.</p>
+                            <p>Una cuenta de Zocalo.com no es su ceunta de compra de boletos y no reconocera el inicio de sesion que utilizo para comprar a menos que suceda usar el mismo registro en ambos sitios web. Los sitios web no estan relacionados y no se comunican entre si.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="row main">
+                <div class="panel-heading">
+                   <div class="panel-title text-center">
+                        <h1 class="title">Registro</h1>
+                    </div>
+                </div> 
+                <div class="main-login main-center">
+                    <form class="form-horizontal" method="post" action="#">
+                        
+                        <div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">Nombre del grupo</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="name" id="name"  placeholder="Ingrese el nombre del grupo"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="cols-sm-2 control-label">Correo electronico</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="email" id="email"  placeholder="Ingresa tu correo electronico"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username" class="cols-sm-2 control-label">Nombre de Usuario</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="username" id="username"  placeholder="Ingresa tu nombre de usuario"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="cols-sm-2 control-label">Contrasena</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="password" id="password"  placeholder="Ingresa tu contrasena"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm" class="cols-sm-2 control-label">Confrima tu contrasena</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confrima tu contrasena"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <button type="button" class="btn btn-primary btn-lg btn-block login-button">Registrate</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+        <!-- El footer del sitio. De nuevo, tiene que ser igual para todas las páginas-->
+        <footer>
+            <div class="div container-fluid">
+                <div class="row">
+                    <!-- Redes sociales-->
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="http://www.facebook.com" id="footer-facebook">facebook</a>
+                        <a href="http://www.instagram.com" id="footer-instagram">instagram</a>
+                    </div>
+                    
+                    <!-- Términos y condiciones-->
+                    <div class="col-xs-12 col-sm-4">
+                        <span id="footer-terminos">Términos y condiciones</span>
+                    </div>
+
+                    <!-- Copyright-->
+                    <div class="col-xs-12 col-sm-4">
+                        <span>&copy; Goldenvoice 2017</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="modal" id="modal-terminos">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">Cerrar &times;</span>
+                    <h1>Términos y condiciones</h1>
+                </div>
+                <div class="modal-texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi unde, perspiciatis quasi hic eligendi blanditiis dolorem ipsum ea quisquam accusamus earum, consequatur, neque necessitatibus, numquam saepe ut maiores ratione voluptate.</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

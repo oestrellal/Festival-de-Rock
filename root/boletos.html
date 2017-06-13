@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+        <script src="javascript/bootstrap.min.js"></script>
+        <script src="javascript/funciones.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Boletos - Zócalo</title>
+    </head>
+    <body>
+        <!-- El header del sitio. Debe de ser igual para todas las páginas.-->
+        <!-- FALTA centrar los links y diseñar el modo responsivo. Además, los links están centrados con una chicanada.-->
+        <header>
+            <div class="div container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="index.html" id="logotipo">Logotipo</a>
+                    </div>
+                    <div class="col-md-10" id="contenedor-menu">
+                        <span id="menu-movil" class="visible-xs-inline-block visible-sm-inline-block">Menú</span>
+                        <nav>
+                            <a href="concurso.html">Concurso</a>
+                            <a href="conferencias.html">Conferencias</a>
+                            <a href="eventos.html">Eventos</a>
+                            <a href="estadia.html">Estadía</a>
+                            <a href="invitados.html">Invitados</a>
+                            <a href="boletos.html">Boletos</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- La imagen de portada con parallax. -->
+        <div class="parallax" id="boletos-portada">
+            <div class="overlay"></div>
+        </div>
+
+        <!-- El contenido principal de la pagina.-->
+        <main id="boletos-main">
+            <div class="div container-fluid">
+                <!-- Título.-->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <span id="boletos-icono">Icono</span>
+                        <div id="pagina-titulo">
+                            <h1>Elige tu paquete</h1>
+                            <h3>XVIII ENCUENTRO INTERNACIONAL DE ROCK: GUERRA DE BANDAS</h3>
+                            <p>Elige el paquete que mas te guste y aparta tu boleto con anticipacion para que disfrutes de las mejores promociones.</p>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-4 col-md-4 col-sm-4">
+          <img src="imagenes/boletos/boleto1.jpg" alt="Generic placeholder image" width="280" height="150">
+          <h3>Solo un dia</h3>
+          <h2>ADMISION GENERAL</h2>
+          <p>$250 + gastos</p>
+          <ul>
+              <li>
+                Entrada para un solo dia
+              </li>
+              <li>
+                Dia de estacionamiento
+              </li>
+              <li>
+                  Cargo adicional por envio internacional
+              </li>
+          </ul>
+          <p><a class="btn btn-default" href="http://www.ticketmaster.com/" role="button">Comprar »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-md-4 col-sm-4">
+        <img src="imagenes/boletos/boleto2.jpg" alt="Generic placeholder image" width="280" height="150">
+        <h3>Dos dias</h3>
+        <h2>ADMISION GENERAL</h2>
+          <p>$350 + gastos</p>
+          <ul>
+              <li>
+                Entrada por dos dias
+              </li>
+              <li>
+                Dias de estacionamiento + Shuttle pass
+              </li>
+              <li>
+                  Cargo adicional por envio internacional
+              </li>
+          </ul>
+          <p><a class="btn btn-default" href="http://www.ticketmaster.com/" role="button">Comprar »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <img src="imagenes/boletos/boleto3.jpg" alt="Generic placeholder image" width="280" height="150">
+        <h3>Tres dias</h3>
+        <h2>ADMISION GENERAL</h2>
+          <p>$550 + gastos</p>
+          <ul>
+              <li>
+                Entrada al festival para todos los dias
+              </li>
+              <li>
+                Dias de estacionamiento + Shuttle pass
+              </li>
+              <li>
+                  Camiseta de recuerdo
+              </li>
+              <li>
+                  Cargo adicional por envio internacional
+              </li>
+          </ul>
+          <p><a class="btn btn-default" href="http://www.ticketmaster.com/" role="button">Comprar »</a></p>
+        </div><!-- /.col-lg-4 -->
+                </div>
+
+        </main>
+
+        <!-- El footer del sitio. De nuevo, tiene que ser igual para todas las páginas-->
+        <footer>
+            <div class="div container-fluid">
+                <div class="row">
+                    <!-- Redes sociales-->
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="http://www.facebook.com" id="footer-facebook">facebook</a>
+                        <a href="http://www.instagram.com" id="footer-instagram">instagram</a>
+                    </div>
+                    
+                    <!-- Términos y condiciones-->
+                    <div class="col-xs-12 col-sm-4">
+                        <span id="footer-terminos">Términos y condiciones</span>
+                    </div>
+
+                    <!-- Copyright-->
+                    <div class="col-xs-12 col-sm-4">
+                        <span>&copy; Goldenvoice 2017</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="modal" id="modal-terminos">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">Cerrar &times;</span>
+                    <h1>Términos y condiciones</h1>
+                </div>
+                <div class="modal-texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi unde, perspiciatis quasi hic eligendi blanditiis dolorem ipsum ea quisquam accusamus earum, consequatur, neque necessitatibus, numquam saepe ut maiores ratione voluptate.</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
